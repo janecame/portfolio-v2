@@ -1,0 +1,150 @@
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 100vh;
+}
+
+
+.box{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.hero-footer{
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 20px;
+
+}
+
+.hero-content{
+	width: 50%;
+	padding: 20px;
+	color: #303841;
+	
+}
+.hero-content p{
+	margin: 0;
+}
+.hero-content p:nth-child(1){
+	font-size: 30px;
+}
+.hero-content p:nth-child(2){
+	font-size: 80px;
+}
+.hero-content p:nth-child(3){
+	font-size: 25px;
+	letter-spacing: 2px;
+	color: #3A4750;
+	
+}
+.hero-content p:nth-child(4){
+	font-size: 20px;
+	border-bottom: 3px solid #2185D5;	
+}
+
+
+.hero-content-description{
+	font-size: 1rem;
+}
+
+.hero-self{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+
+.circle:nth-child(1){
+	height: 400px;
+	width: 400px;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+.circle:nth-child(2){
+	position: absolute;
+	top: 55%;
+	left: 2%;
+	height: 350px;
+	width: 350px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: #2185D5;
+	z-index: -1;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+.circle:nth-child(3){
+	position: absolute;
+	top: 20%;
+	left: 55%;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	background-color: #3A4750;
+	z-index: -1;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+
+
+
+.hero-logos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.19);
+	border-radius: 50%;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.8px);
+	-webkit-backdrop-filter: blur(5.8px);
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+	animation: fadeIn 2.0s ease-in;
+}
+
+.hero-logos img{
+	height: 55%;
+}
+.hero-image{
+	height: 500px;
+	width: 500px;
+}
+
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@media screen and (max-width: 960px) {
+	.hero-content{
+		width: 100%;
+	}
+	.hero-content p:nth-child(1){
+		font-size: 1rem;
+	}
+	.hero-content p:nth-child(2){
+		font-size: 3rem;
+	}
+	.hero-content p:nth-child(3){
+		font-size: 1rem;
+	}
+	.hero-content p:nth-child(4){
+		font-size: 1rem;
+	}
+	.hero-logos, .hero-self, .circle{
+		display: none;
+	}
+	.hero-footer{
+		justify-content: center;
+	}
+}

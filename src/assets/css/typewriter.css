@@ -1,0 +1,37 @@
+#main {
+  height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 24px;
+  color: #303841;
+  position: relative;
+}
+#border {
+  border-bottom: solid 3px rgb(48, 56, 65);
+  position: absolute;
+  right: -7px;
+  width: 20px;
+}
+#main {
+  animation: animated-text 2s steps(30, end) 1s 1 normal both
+}
+#border {
+  animation: animated-cursor 600ms steps(30, end) infinite;
+}
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 250px;
+  }
+}
+@keyframes animated-cursor {
+  from {
+    border-bottom-color: rgb(48, 56, 65);
+  }
+  to {
+    border-bottom-color: transparent;
+  }
+}
