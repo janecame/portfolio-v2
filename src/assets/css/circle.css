@@ -1,0 +1,32 @@
+.bg--primary {
+  background-color: #2185D5;
+}
+.bg--secondary {
+  background-color: #303841;
+}
+.bg--tertiary {
+  background-color: #3A4750;
+}
+
+
+.shape--large{
+  height: 400px;
+  width: 400px;
+}
+.shape--medium{
+  height: 350px;
+  width: 350px;
+}
+.shape--small{
+  height: 300px;
+  width: 300px;
+}
+
+
+.circle{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: -11;
+}

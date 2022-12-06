@@ -63,35 +63,13 @@
 	height: 100%;
 }
 
-.circle:nth-child(1){
+.profile{
 	height: 400px;
 	width: 400px;
 	border-radius: 50%;
 	overflow: hidden;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
-}
-.circle:nth-child(2){
-	position: absolute;
-	top: 55%;
-	left: 2%;
-	height: 350px;
-	width: 350px;
-	border-radius: 50%;
-	overflow: hidden;
-	background-color: #2185D5;
-	z-index: -1;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
-}
-.circle:nth-child(3){
-	position: absolute;
-	top: 20%;
-	left: 55%;
-	height: 300px;
-	width: 300px;
-	border-radius: 50%;
-	background-color: #3A4750;
-	z-index: -1;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+	z-index: ;
 }
 
 
@@ -103,12 +81,11 @@
 	position: absolute;
 	background: rgba(255, 255, 255, 0.19);
 	border-radius: 50%;
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5.8px);
 	-webkit-backdrop-filter: blur(5.8px);
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-	animation: fadeIn 2.0s ease-in;
+	
 }
 
 .hero-logos img{
@@ -120,10 +97,6 @@
 }
 
 
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
 
 @media screen and (max-width: 960px) {
 	.hero-content{

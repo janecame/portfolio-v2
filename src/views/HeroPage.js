@@ -1,8 +1,9 @@
-import '../assets/css/HeroPage.css';
+import '../assets/css/hero.css';
 import '../assets/css/waving.css';
 import '../assets/css/typewriter.css';
 
 import CustomButton from "../components/Button/CustomButton";
+import Circle from "../components/Circle";
 import { IoLogoInstagram, IoLogoFacebook, IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5';
 import { html5, php, materialui, nodejs, js, react, mysql, bootstrap } from '../utils/ImageIcons'
 
@@ -57,11 +58,10 @@ function HeroPage(){
           </div>
 
           <div className="hero-self">
-            <div className="circle">
+            <div className="profile">
               <img src={require("../assets/images/rodrigo2.jpg")} alt="hero-profile" className="hero-image"/>
             </div>
-            <div className="circle" />
-            <div className="circle" />
+            
             
 
             <IconFloat icon={php} size="80px" top="59%" left="15%" />

@@ -19,7 +19,7 @@ export default function CustomizedTimeline() {
 
     <div className="container">
       <div className="journey-box">
-        <div style={{ width: '50%' }}>
+        <div className="description">
           <h1>My Journey</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi dun
           t ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>

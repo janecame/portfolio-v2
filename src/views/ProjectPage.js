@@ -60,9 +60,10 @@ function ProjectPage(){
 					devIcons={[<DiHtml5 />, <DiCss3 />, <DiPhp />, <DiJqueryLogo/>, <DiBootstrap/>, <DiMysql />]}
 				/>
 
+				<div className="view-more-menu">
+					<a href="#" onClick={() => console.log("dsdsdsds")}>More >></a>
+				</div>
 				
-				
-	
 			</div>
 			
 		</div>

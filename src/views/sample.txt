@@ -1,0 +1,40 @@
+			  <ParallaxLayer offset={1} speed={0.3} 
+			  		style={{ 
+			  			position: 'absolute',
+			  			top: '5%',
+			  			left: '-5%',
+			  			height: '500px',
+			  			width: '500px',
+			  			backgroundColor: '#2185D5',
+			  			borderRadius: '50%',
+			  			zIndex: '-1',
+						boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'
+
+			  		}} />
+			   <ParallaxLayer offset={1} speed={0.3} 
+			  		style={{ 
+			  			position: 'absolute',
+			  			top: '15%',
+			  			left: '50%',
+			  			height: '300px',
+			  			width: '300px',
+			  			backgroundColor: '#3A4750',
+			  			borderRadius: '50%',
+			  			zIndex: '-2',
+						boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'
+
+			  		}} />
+
+						  <ParallaxLayer offset={1} speed={2} 
+			  		style={{ 
+			  			position: 'absolute',
+			  			top: '60%',
+			  			left: '50%',
+			  			height: '700px',
+			  			width: '700px',
+			  			backgroundColor: '#2185D5',
+			  			borderRadius: '50%',
+			  			zIndex: '-2',
+						boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'
+
+			  		}} />

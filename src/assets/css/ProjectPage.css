@@ -12,6 +12,11 @@
 	justify-content: space-between;
 	width: 100%;
 	margin: 10px 0;
+	background: rgba(255, 255, 255, 0.19);
+	backdrop-filter: blur(5.8px);
+	border-radius: 20px;
+	-webkit-backdrop-filter: blur(5.8px);
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
 
@@ -33,10 +38,13 @@
 	justify-content: space-between;
 	height: 300px;
 	width: 70%;
+
+
 }
 .details{
 	display: flex;
 	flex-direction: column;
+	padding: 10px;
 	
 }
 .project-info .details p{
@@ -61,6 +69,25 @@
 	font-size: 25px;
 
 }
+.view-more-menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	width: 100%;
+}
+.view-more-menu a{
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #303841;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius: 5px;
+}
+.view-more-menu a:hover{
+	transition: 0.3s;
+	background-color: #2185D5;
+	color: #fff;
+}
+
 
 @media screen and (max-width: 960px) {
 	.project-box{
