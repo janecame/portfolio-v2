@@ -188,8 +188,8 @@ function GalleryPage () {
 			:
 				<>
 					<div className="close-icon" onClick={() => setView(false)}>
-	      				<i><IoClose /></i>
-	      			</div>
+	      			<i><IoClose /></i>
+	      	</div>
 					{getGallery(type)}
 				</>
 			}

@@ -8,8 +8,6 @@ import Circle from '../components/Circle';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import React, { useRef, useState } from 'react';
 import { useNav } from "../utils/navigation";
-import wave1 from '../assets/svg/wave1.svg';
-import wave2 from '../assets/svg/wave2.svg';
 
 function MainPage() {
 	const nav = useNav();
@@ -23,12 +21,6 @@ function MainPage() {
 				offset={0}
 				speed={1.5}
 				>
-				<Circle
-	              bgColor="bg--secondary"
-	              position={['15%', '70%']}
-	              shapeSize="shape--small"
-
-	            />
 			  	<Circle 
 	              position={['48%', '52%']}
 	              shapeSize="shape--medium"
@@ -43,7 +35,28 @@ function MainPage() {
 			    <HeroPage />
 			  </ParallaxLayer>
 			   
+			  <ParallaxLayer
+				offset={1}
+				speed={1.5}
+				>
+				<Circle
+				  bgColor="bg--tertiary"
+	              position={['5%', '-5%']}
+	              shapeSize="shape--small"
 
+	            />
+				<Circle
+	              position={['10%', '80%']}
+	              shapeSize="shape--small"
+
+	            />
+			  	<Circle 
+			  	  bgColor="bg--secondary"
+	              position={['70%', '32%']}
+	              shapeSize="shape--medium"
+	            />
+	            
+			  	</ParallaxLayer>
 
 			  <ParallaxLayer
 			    offset={1}
@@ -57,15 +70,6 @@ function MainPage() {
 			  >
 			 	 <TimelinePage />
 			  
-			  </ParallaxLayer>
-
-			  <ParallaxLayer
-			    offset={1}
-			    speed={2.5}
-			    style={{ zIndex: '-11' }}
-			  >
-			  	<img src={wave1} alt="SVG as an image" style={{ position: 'absolute', bottom: '0' }} />
-			  	<img src={wave2} alt="SVG as an image" style={{ position: 'absolute', bottom: '-42%' }} />
 			  </ParallaxLayer>
 
 
@@ -104,7 +108,7 @@ function MainPage() {
 			    style={{
 			      display: 'flex',
 			      justifyContent: 'center',
-			      alignItems: 'center',
+			      alignItems: 'center'
 			    }}>
 			    <ProjectPage />
 			  </ParallaxLayer>

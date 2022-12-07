@@ -71,7 +71,11 @@ function HeroPage(){
             <IconFloat icon={js} size="80px" top="68%" left="30%" />
             <IconFloat icon={materialui} size="80px" top="70%" left="58%" />
             <IconFloat icon={bootstrap} size="60px" top="61%" left="53%" />
-
+            <Circle 
+              bgColor="bg--secondary"
+              position={['18%', '55%']}
+              shapeSize="shape--small"
+            />
 
           </div>
           

@@ -1,0 +1,131 @@
+
+.project-wrapper{
+	display:  flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	margin: 10% 0;
+}
+
+.project-wrapper-info{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	height: 300px;
+	width: 80%;
+	cursor: pointer;
+	margin: 10px 10px;
+	overflow: hidden;
+
+
+}
+
+.project-info-img img{
+	height: 300px;
+}
+.project-info-img{
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	width: 35%;
+}
+.project-info-all{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+	height: 100%;
+	width: 65%;
+}
+
+
+.project-box{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 250px;
+	overflow: hidden;
+	cursor: pointer;
+	width: 350px;
+	margin: 10px 10px;
+	backdrop-filter: blur(5.8px);
+	border-radius: 20px;
+	-webkit-backdrop-filter: blur(5.8px);
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.project-box img{
+	position: absolute;
+	height: 300px;
+}
+.project-box img:hover{
+	transition: 1.3s;
+	transform: scale(1.5); 
+}
+
+.project-info{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: flex-end;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	background: linear-gradient(0deg, rgba(48,56,65,1) 0%, rgba(56,56,56,1) 0%, rgba(255,255,255,0.07046568627450978) 82%);
+}
+
+.details{
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	
+}
+.details p{
+	margin: 3px 0;
+	padding: 0 20px;
+	text-align: right;
+}
+.details p:nth-child(1){
+	font-size: 30px;
+	
+}
+.details p:nth-child(2){
+	font-size: 20px;
+}
+
+.development{
+	padding: 0 20px;
+	display: flex;
+	flex-direction: row;
+}
+
+.development i{
+	margin: 10px 5px;
+	font-size: 25px;
+
+}
+
+
+
+@media screen and (max-width: 960px) {
+
+	.project-wrapper{
+		margin: 0;	
+	}
+	.project-box{
+		display: flex;
+		flex-direction: column;
+	}
+	.project-img, .project-info{
+		width: 100%;
+	}
+
+}
+
