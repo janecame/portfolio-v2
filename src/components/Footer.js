@@ -9,15 +9,43 @@ function Footer(){
 				<div className="footer-wrapper">
           			<div className="footer-box">
 
-          				<h1>Logo Here</h1>
-          				<p>cuello.web.app | 09619055939 | email@gmail.com</p>
+          				<h1>CUE.<span style={{ color: '#2185D5' }}>me</span></h1> 
+          				<p>09619055939 | email@gmail.com</p>
 
-	          			<div className="social-links">
-	          				<i><IoLogoGithub /></i>
-				          	<i><IoLogoLinkedin /></i>
-				          	<i><IoLogoFacebook /></i>
-				          	<i><IoLogoInstagram /></i>
+
+	          			<div className="social-links" style={{ marginTop: "20px" }}>
+
+	          				<a 
+								href='https://github.com/janecame'
+								target='github'
+								arial-label='github'
+							>
+								<IoLogoGithub />
+							</a>
+							<a 
+								href='http://www.linkedin.com/in/rodrigo-cuello-cue03'
+								target='linkedin'
+								arial-label='linkedin'
+							>
+								<IoLogoLinkedin />
+							</a>
+							<a 
+								href='https://www.facebook.com/jane.came'
+								target='Facebook'
+								arial-label='Facebook'
+							>
+								<IoLogoFacebook />
+							</a>
+							<a 
+								href='https://www.instagram.com/rodrigo_cuello_03/?hl=en'
+								target='instagram'
+								arial-label='instagram'
+							>
+								<IoLogoInstagram />
+							</a>
 	          			</div>
+
+	          			<p>© Copyright, CUE.me</p>
 	          		</div>
 	          	</div>
 	          

@@ -39,12 +39,13 @@ function HeroPage(){
             </div>
             <p className="font-size-regular">MUR, Philippines</p>
             <div style={{ marginTop: "20px" }} />
-            <p className="hero-content-description font-size-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi
-            dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati
-            on ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in rep
-            rehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sin
-            t occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es
-            t laborum.</p>
+            <p className="hero-content-description font-size-regular">
+
+            Hello! My name is Rodrigo Cuello and I want to be a React JS Developer with a passion for creating 
+            innovative and user-friendly applications. I do coding for 3 years of experience in the 
+            field, working with a variety of programming languages and frameworks. 
+            I am proficient in Javascript, and PHP. I am always looking to learn and grow as a developer, and I am excited to share my skills and experience with you through my portfolio. Thank you for taking the time to visit!
+            </p>
             <div style={{ marginTop: "20px" }}>
               <CustomButton
                 buttonStyle="btn--primary"
@@ -52,7 +53,7 @@ function HeroPage(){
                 buttonType="btn--secondary"
                 type="button"
               >
-              Hire Me
+              Download CV
             </CustomButton>
             </div>
           </div>
@@ -86,10 +87,38 @@ function HeroPage(){
 
         <div className="hero-footer social-links">
           
-          <i><IoLogoGithub /></i>
-          <i><IoLogoLinkedin /></i>
-          <i><IoLogoFacebook /></i>
-          <i><IoLogoInstagram /></i>
+              <a 
+                href='https://github.com/janecame'
+                target='github'
+                arial-label='github'
+                style={{ fontSize: '20px'}}
+              >
+                <IoLogoGithub />
+              </a>
+              <a 
+                href='http://www.linkedin.com/in/rodrigo-cuello-cue03'
+                target='linkedin'
+                arial-label='linkedin'
+                style={{ fontSize: '20px'}}
+              >
+                <IoLogoLinkedin />
+              </a>
+              <a 
+                href='https://www.facebook.com/jane.came'
+                target='Facebook'
+                arial-label='Facebook'
+                style={{ fontSize: '20px'}}
+              >
+                <IoLogoFacebook />
+              </a>
+              <a 
+                href='https://www.instagram.com/rodrigo_cuello_03/?hl=en'
+                target='instagram'
+                arial-label='instagram'
+                style={{ fontSize: '20px'}}
+              >
+                <IoLogoInstagram />
+              </a>
           
         </div>
         

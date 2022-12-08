@@ -36,6 +36,7 @@
 	bottom: 0;
 	font-size: 22px;
 	color: #fff;
+	letter-spacing: 1px;
 }
 
 .gallery div:hover{
@@ -47,46 +48,6 @@
 .snaps-inline{
 	scroll-snap-type: inline mandatory;
 
-}
-.snaps-inline > *{
-	scroll-snap-align: start;
-}
-
-.media-scroller{
-	position: absolute;
-	bottom: 0;
-	display: grid;
-	grid-auto-flow: column;
-	grid-auto-columns: 27%;
-	overflow-x: auto;
-	overscroll-behavior-inline: contain;
-	height: 90vh;
-	width: 100vw;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	animation: fadeIn 2.0s ease-in;		
-	
-}
-
-.media-element{
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	overflow: hidden;
-	background: linear-gradient(0deg, rgba(51,51,51,1) 0%, rgba(255,255,255,0.07046568627450978) 82%);
-
-}
-.media-element img{
-	height: 100%;
-	z-index: -10;
-}
-
-.media-element p{
-	position: absolute;
-	bottom: 5%;
-	font-size: 20px;
-	color: white;	
 }
 .close-icon {
     display: block;
@@ -101,13 +62,21 @@
 }
 
 
-@keyframes fadeIn {
-  from {
-  	transform: translateX(50%);
-  	opacity: 0;
+
+@media screen and (max-width: 960px) {
+	.gallery{
+		display:  flex;
+		flex-direction: column;
+		height: 80vh;
+	}
+  .gallery div{
+  	 width: 100%;
+  	 border-radius: 0px;
   }
-  to {
-  	transform: translateX(0%);
-  	opacity: 1;
-  }
+  .gallery div img{
+		height: auto;
+		width: 100%;
+		z-index: -10;
+	}
+
 }

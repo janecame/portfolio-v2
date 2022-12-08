@@ -33,7 +33,7 @@ function Navbar(){
       			<Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
               {/*<img src={LOGO} alt="ceu"/>*/}
              
-              <h1>CEU</h1> 
+              <h1>CUE.<span style={{ color: '#2185D5' }}>me</span></h1> 
       			</Link>
       			
             <div className="menu-icon" onClick={handleClick}>
@@ -47,7 +47,7 @@ function Navbar(){
       			<ul className={click ? 'nav-menu active' : 'nav-menu'}>
       				<li className='nav-item'>
       					<Link to='/' className='nav-links' onClick={() => closeMobileMenu(0)}>
-      						Hi
+      						Home
       					</Link>
       				</li>
       				<li className='nav-item'>

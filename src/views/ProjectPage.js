@@ -7,24 +7,24 @@ import { IoClose } from 'react-icons/io5';
 
 const PROJECTS = [
 		{
-			img: Images.personal1,
-			name: "materialui",
-			role: "contributions",
-			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo d tempor incidi dunt ut labore et dolore magna aliqua. Ut enim ad minim",
+			img: Images.oems,
+			name: "OAMS",
+			role: "Lead Programmer",
+			description: "OAMS or Online Admision Management System for STI West Negros University is developed during taking my Senio high school grade 12 capstone. I was the lead programmer of the team.",
 			devIcons: [<DiHtml5 />, <DiCss3 />, <DiPhp />, <DiJqueryLogo/>, <DiBootstrap/>, <DiMysql />]
 		},
 		{
-			img: Images.emberspirit2,
-			name: "materialuidddd",
-			role: "contributions",
-			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo d tempor incidi dunt ut labore et dolore magna aliqua. Ut enim ad minim",
+			img: Images.baccims,
+			name: "baccims",
+			role: "Deployment",
+			description: "BACCIMS or Crime Mapping Incident Management Information System in Bacolod City. I was task to deploy the project during my on-the-job training in my 3rd years of college",
 			devIcons: [<DiHtml5 />, <DiCss3 />, <DiPhp />, <DiJqueryLogo/>, <DiBootstrap/>, <DiMysql />]
 		},
 		{
-			img: Images.emberspirit2,
-			name: "materialuidddd",
-			role: "contributions",
-			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo d tempor incidi dunt ut labore et dolore magna aliqua. Ut enim ad minim",
+			img: Images.brgy38,
+			name: "eDocPortal",
+			role: "Maintenace, Deployment",
+			description: "eDocPortal or Electronic Docment Portal with Quick Response Technology for Bacolod City. I was task to maintain and deploy the project during my on-the-job training in my 3rd years of college",
 			devIcons: [<DiHtml5 />, <DiCss3 />, <DiPhp />, <DiJqueryLogo/>, <DiBootstrap/>, <DiMysql />]
 		}
 	];

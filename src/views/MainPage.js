@@ -41,7 +41,7 @@ function MainPage() {
 				>
 				<Circle
 				  bgColor="bg--tertiary"
-	              position={['5%', '-5%']}
+	              position={['5%', '-10%']}
 	              shapeSize="shape--small"
 
 	            />
@@ -165,13 +165,34 @@ function MainPage() {
 
 
 
+			  <ParallaxLayer
+				offset={4}
+				speed={2.5}
+				>
+				<Circle
+	              position={['-5%', '-5%']}
+	              shapeSize="shape--large"
 
+	            />
+				<Circle
+				  bgColor="bg--secondary"
+	              position={['10%', '80%']}
+	              shapeSize="shape--small"
+
+	            />
+			  	<Circle 
+			  	  bgColor="bg--tertiary"
+	              position={['70%', '32%']}
+	              shapeSize="shape--medium"
+	            />
+	            
+			  	</ParallaxLayer>
 			  <ParallaxLayer offset={4} speed={1.5}>
 			    <AboutPage />  
 			  </ParallaxLayer>
 			  
 
-
+			  
 			  <ParallaxLayer offset={5} speed={1.5} style={{
 			      display: 'flex',
 			      flexDirection: 'column',
@@ -181,10 +202,6 @@ function MainPage() {
 			    }}>
 			    <Footer />
 			  </ParallaxLayer>
-
-
-
-
 			</Parallax>
 			
 		</>
