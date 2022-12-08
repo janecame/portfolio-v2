@@ -1,11 +1,10 @@
 import '../assets/css/hero.css';
 import '../assets/css/waving.css';
 import '../assets/css/typewriter.css';
-
-import CustomButton from "../components/Button/CustomButton";
+import cv from  '../assets/cuello_vitae.pdf';
 import Circle from "../components/Circle";
 import { IoLogoInstagram, IoLogoFacebook, IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5';
-import { html5, php, materialui, nodejs, js, react, mysql, bootstrap } from '../utils/ImageIcons'
+import { php, materialui, nodejs, js, react, mysql, bootstrap } from '../utils/ImageIcons'
 
 
 
@@ -20,6 +19,24 @@ const IconFloat = ({icon, size, top, left}) => {
     );
 }
 
+
+
+const downloadcv = {
+                      outline: "none",
+                      border: "none",
+                      cursor: "pointer",
+                      alignItems: "center",
+                      display: "flex",
+                      justifyContent: "center",
+                      boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                      backgroundColor: "#2185D5",
+                      color: "#fff",
+                      padding: "12px 20px",
+                      borderRadius: "30px",
+                      textDecoration: "none",
+                      width: "150px"
+
+                   };
 
 
 function HeroPage(){
@@ -47,14 +64,11 @@ function HeroPage(){
             I am proficient in Javascript, and PHP. I am always looking to learn and grow as a developer, and I am excited to share my skills and experience with you through my portfolio. Thank you for taking the time to visit!
             </p>
             <div style={{ marginTop: "20px" }}>
-              <CustomButton
-                buttonStyle="btn--primary"
-                buttonSize="btn--large"
-                buttonType="btn--secondary"
-                type="button"
-              >
-              Download CV
-            </CustomButton>
+
+
+             <a href={cv} className="font-size-regular" style={downloadcv} download>
+               Download CV
+             </a>
             </div>
           </div>
 
@@ -88,10 +102,11 @@ function HeroPage(){
         <div className="hero-footer social-links">
           
               <a 
-                href='https://github.com/janecame'
+                href="https://github.com/janecame"
                 target='github'
                 arial-label='github'
                 style={{ fontSize: '20px'}}
+                download
               >
                 <IoLogoGithub />
               </a>

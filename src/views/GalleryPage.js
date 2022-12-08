@@ -151,7 +151,7 @@ function GalleryPage () {
 				<div className="gallery">
 					<div onClick={() => handleOpen(0)}>
 						<img src={Images.drawing31} alt="" />
-						<p className="font-size-regular">My Art</p>
+						<p className="font-size-regular">Art Works</p>
 					</div>
 					<div onClick={() => handleOpen(1)}>
 						<img src={Images.emberspirit2} alt="" />
